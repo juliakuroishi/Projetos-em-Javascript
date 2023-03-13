@@ -1,0 +1,41 @@
+<!-- onclick no botao converter, converte a temperatura de Fahrenheit para Celsius-->
+
+<!DOCTYPE html>
+<head>
+
+</head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        padding-top: 5%; 
+    }
+
+    button{
+        background-color: rgb(108, 117, 192);
+        border-color: rgb(108, 117, 192);
+        color: white;
+
+    }
+</style>
+<body>
+    <script>
+        function conversor(){
+            document.getElementById('temp').innerHTML = paraCelsius(77);
+            document.getElementById('h2').innerHTML="Temperatura em Celsius:"
+        }
+
+        function paraCelsius(f){
+            return (5/9) * (f-32)
+            
+        }
+ 
+    </script>
+    <h1> Vamos converter a temperatura abaixo: </h1>
+    <h2 id="h2">Temperatura em Fahrenheit:</h2>
+    <p id="temp"> 77</p>
+    <button type="button" onclick="conversor()">Converter temperatura</button>
+    <style>
+        
+    </style>
+</body>
